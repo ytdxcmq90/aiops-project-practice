@@ -1,0 +1,104 @@
+<!doctype html><html lang="zh-CN"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>第08篇 演示成功了，POC为什么还是过不了？</title><style>*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:30px}body{margin:0;background:#f3f1eb;color:#20323c;font:17px/1.95 "Microsoft YaHei","PingFang SC",sans-serif}a{color:#146f72;text-decoration:none}a:hover{text-decoration:underline}main{max-width:1080px;margin:0 auto;background:#fffefa;padding:0 64px 80px}.collection-head{padding:64px 0 38px;border-bottom:2px solid #173d46}.eyebrow{font-size:13px;letter-spacing:2px;color:#28676c;font-weight:700}.collection-head h1{font-size:43px;line-height:1.5;max-width:800px;margin:18px 0}.collection-head .intro{max-width:740px;font-size:18px;color:#52646a}.collection-head .entry{display:flex;gap:14px;flex-wrap:wrap;margin:26px 0 18px}.entry a{display:inline-block;background:#174a50;color:#fff;padding:10px 20px;border-radius:4px;font-size:15px}.entry a.secondary{background:#ecece3;color:#21464b}.note{font-size:13px;color:#6b777a;line-height:1.8;max-width:800px}nav{padding:25px 0 30px;border-bottom:1px solid #dedfd7}nav summary{cursor:pointer;font-size:17px;font-weight:700;color:#173d46}nav ol{padding:12px 0 0 26px;columns:2;column-gap:36px}nav li{margin:0 0 13px;break-inside:avoid;line-height:1.7;font-size:14px}article{padding-top:55px;margin-top:36px;border-top:1px solid #b9cbc8}article:first-of-type{border-top:0;margin-top:0}.article-hero{position:relative;padding:12px 0 26px;border-bottom:1px solid #d5dfd9;margin-bottom:28px}.article-hero .serial{font-size:12px;letter-spacing:2px;color:#55716f}.article-hero h1{font-size:35px;line-height:1.55;max-width:830px;margin:16px 0 20px;letter-spacing:-.5px;color:#133c43}.article-hero .promise{font-size:16px;line-height:1.8;color:#51696a;max-width:760px;margin:0}.article-hero .promise:before{content:"读完能做什么 / ";font-size:12px;color:#347575;font-weight:700}.prose{max-width:790px;margin:0 auto}h2{font-size:24px;line-height:1.6;color:#173f48;margin:42px 0 18px}h3{font-size:20px}p{margin:18px 0}strong{font-weight:700;color:#133c43}.prose>p:nth-child(-n+3){font-size:18px;line-height:2}.prose>p:first-child{font-size:22px;line-height:1.85;color:#173f48;font-weight:500}blockquote{border:0;padding:0;margin:24px 0;color:#71817d;font-size:12px;line-height:1.7}blockquote p{margin:0}.tool-sheet{margin:28px 0;border-top:1px solid #c7d5cf;border-bottom:1px solid #c7d5cf;padding:15px 0}.tool-sheet summary{cursor:pointer;color:#1e5e62;font-size:15px;font-weight:700;line-height:1.7;display:list-item}.tool-sheet summary:after{content:"  ＋";float:right;font-weight:400;color:#6c8c86}.tool-sheet[open] summary:after{content:"  −"}table{width:100%;border-collapse:collapse;font-size:14px;line-height:1.75;margin:20px 0 8px;table-layout:fixed}th,td{padding:12px 11px;border:1px solid #d5dfd8;vertical-align:top;overflow-wrap:anywhere}th{background:#eaf0e9;text-align:left;color:#24575a}tr:nth-child(even) td{background:#f8faf5}li{margin:10px 0}figure{margin:32px -34px}figure svg{width:100%;height:auto;display:block;border-radius:10px}figcaption{font-size:12px;color:#6a7e7d;margin:9px 8px;line-height:1.7}.fig-open{font-size:12px;margin-left:8px}.scene-compare{margin:32px 0 34px;padding:28px;background:#eef2e9;border-radius:8px}.scene-compare .scene-label{color:#597773;font-size:12px;letter-spacing:1px;margin-bottom:8px}.scene-compare h3{font-size:21px;margin:0 0 20px;line-height:1.6}.scene-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.scene-route{padding-top:14px;border-top:3px solid #a7b5ac}.scene-route.focus{border-top-color:#167678}.scene-route .tag{font-size:12px;color:#657c77}.scene-route .quote{font-size:17px;color:#183f44;margin:10px 0;line-height:1.8}.scene-route .result{font-size:13px;color:#5d726f;margin:12px 0 0;line-height:1.8}.scene-note{font-size:12px;color:#667d75;margin:20px 0 0}.thinking{margin:28px 0;padding:20px 24px 22px;border-left:3px solid #d69c4a;background:#fbf4e7}.thinking summary{cursor:pointer;font-size:17px;font-weight:700;line-height:1.7;color:#694c26}.thinking p{font-size:15px;margin:16px 0 0;line-height:1.85}.result-ladder{margin:28px 0;background:#edf1ef;padding:24px;border-radius:8px}.ladder-step{display:grid;grid-template-columns:40px 110px 1fr;gap:12px;align-items:start;padding:17px 0;border-bottom:1px solid #cbd9d2}.ladder-step:last-child{border:0}.ladder-step .n{font-size:27px;line-height:1.4;color:#7c9d94}.ladder-step b{font-size:17px;color:#1c5357}.ladder-step p{font-size:14px;margin:0;line-height:1.8;color:#526c65}.ladder-caption{font-size:12px;color:#6b8078;margin:0 0 10px}.back{display:block;margin-top:42px;padding:14px 0;border-top:1px solid #d7e1d9;font-size:13px}.chapter-end{max-width:790px;margin:40px auto 0;padding:22px 0;border-top:2px solid #6d9893}.chapter-end small{font-size:12px;color:#62817b;letter-spacing:1px}.chapter-end p{font-size:17px;margin:8px 0 0;color:#1b4c51}footer{font-size:12px;color:#75827d;margin-top:40px}.article-hero+.prose>p:last-child{margin-bottom:30px}@media(max-width:700px){body{font-size:16px}main{padding:0 21px 48px}.collection-head{padding-top:38px}.collection-head h1{font-size:30px}.collection-head .intro{font-size:16px}nav ol{columns:1}article{padding-top:34px}.article-hero h1{font-size:28px;line-height:1.6;letter-spacing:0}.article-hero .promise{font-size:14px}.prose>p:first-child{font-size:20px}.prose>p:nth-child(n+2):nth-child(-n+3){font-size:17px}h2{font-size:22px;margin-top:34px}figure{margin-left:-7px;margin-right:-7px}.scene-compare{padding:21px}.scene-grid{grid-template-columns:1fr;gap:16px}.scene-route .quote{font-size:17px}.ladder-step{grid-template-columns:28px 1fr;gap:5px 12px}.ladder-step p{grid-column:2}.thinking{padding:18px}.tool-sheet{margin:22px 0}table{font-size:13px}th,td{padding:9px 6px}.collection-head .entry a{padding:10px 14px}.result-ladder{padding:18px}}@media print{body{background:white;font-size:11pt}main{padding:0;max-width:none}.collection-head{padding-top:0}.entry,.back,.fig-open{display:none}nav{break-after:page}nav details>ol{display:block!important}article{break-before:page;margin:0;border:0;padding:0}.article-hero h1{font-size:24pt}.prose{max-width:none}h2{break-after:avoid}tr,figure,.scene-compare,.ladder-step{break-inside:avoid}details.tool-sheet>table{display:table!important}.tool-sheet summary:after{display:none}.thinking>p{display:block!important}table{font-size:9pt}a{color:inherit}}
+/* Emphasize the three opening paragraphs consistently in every article. */
+.prose>p:nth-child(-n+3){font-weight:700;color:#125a60}
+.prose>p:nth-child(-n+3) strong{font-weight:700;color:inherit}
+</style><main><article><header class="article-hero"><div class="serial">项目实战 / 08 · 现场执行：差异、变更与可信证据</div><h1>演示成功了，POC为什么还是过不了？</h1><p class="promise">区分三层验证，把问题修订和复测连成一条可追溯记录。</p></header><div class="prose"><p><strong>界面打开了，参数保存了，演示也没有报错。你以为这一项可以划勾，对方却追问：“设完之后，真实数据按这个规则变化了吗？”</strong></p>
+<p><strong>这句追问很关键：能配置、能运行、结果正确，是三件不同的事。</strong></p>
+<p><strong>遇到这种情况，先别急着改参数。保留当时的输入、配置和输出，找到差异后，再决定修哪里、测哪些地方。</strong></p>
+<blockquote>
+<p>文中场景和数字仅作示例，不代表真实项目或实际效果。</p>
+</blockquote>
+<section class="result-ladder" aria-label="三层现场验证"><p class="ladder-caption">同一个功能，至少分清三层结果</p><div class="ladder-step"><span class="n">01</span><b>能配置</b><p>参数能够录入并保存。证明配置入口可用，尚未证明规则生效。</p></div><div class="ladder-step"><span class="n">02</span><b>能运行</b><p>任务启动、数据经过处理。还需检查实际输出是否符合预期。</p></div><div class="ladder-step"><span class="n">03</span><b>结果正确</b><p>输入、配置和输出能对应；正常与边界样本均按约定处理。</p></div></section><details class="thinking"><summary>参数保存成功，但结果没变化，该先改哪里？</summary><p>先保留当前输入、配置版本和输出，复现差异。再区分数据、环境、实现和理解问题。直接修改参数可能暂时改变界面，却让原始问题和比较条件一并丢失。</p></details><h2>开始前先固定本轮条件</h2>
+<p>正式测试前，确认环境、版本、映射与规则、样本集、评价口径和参与者。把它们记录为一次测试批次，后续变动与结果关联。</p>
+<p>记录不需要暴露访问地址和凭据。实际项目可以用内部批次编号关联获准资料；公开报告使用通用编号和脱敏内容。</p>
+<p>还应让使用者先确认要完成的任务。有时双方对功能名称达成一致，却未确认预期动作。例如，“支持交接摘要”可能被理解为导出一张图片，也可能指提供可追溯的事实与来源。应在执行前用输出样例核对。</p>
+<h2>先核对结果，再解释原因</h2>
+<p>假设T02映射冲突用例运行后，页面直接显示了某个负责人。此时应先记录输入、映射版本、实际输出和预期差异，不立即判断是产品缺陷还是配置问题。</p>
+<p>通过复现再区分：输入是否含多个候选，规则是否只取第一条，界面是否错误隐藏冲突，还是测试预期本身未被确认。问题分类决定后续动作，也决定是否需要更新方案和估算。</p>
+<details class="tool-sheet"><summary>现场差异，先查哪一类条件</summary><table>
+<thead>
+<tr>
+<th>差异类型</th>
+<th>先检查什么</th>
+<th>可能的处理</th>
+<th>本轮结论注意事项</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>数据差异</td>
+<td>格式、含义、缺失与时间</td>
+<td>补样本、修解析或缩小验证范围</td>
+<td>不把样本不足写成完整效果</td>
+</tr>
+<tr>
+<td>环境问题</td>
+<td>资源、权限、依赖和配置</td>
+<td>排除条件或调整安排</td>
+<td>条件未满足时记阻塞</td>
+</tr>
+<tr>
+<td>实现限制</td>
+<td>正确输入下的实际行为</td>
+<td>修复、替代或明确不支持</td>
+<td>临时展示不能替代有效实现</td>
+</tr>
+<tr>
+<td>理解差异</td>
+<td>原需求、用例和输出样例</td>
+<td>重新确认并记录变更</td>
+<td>不能事后悄悄改预期</td>
+</tr>
+</tbody></table></details>
+<p>一种问题可以有多个因素。记录主因与相关条件即可，不必为了让台账整齐而强行归成一类。</p>
+<h2>配置存在不等于效果存在</h2>
+<p>一个页面允许设置压缩窗口，只能证明能输入参数。还需要观察输入告警怎样被聚合、恢复条件是否正确、原始记录能否追溯。一个按钮能生成摘要，也不证明摘要中的对象、时间和结论正确。</p>
+<p>验证时应同时保留配置、输入和输出，并证明它们属于同一批次。只拍成功界面，后续无法判断配置是否生效，或是否使用了预先准备的数据。</p>
+<p>技术限制也应明确。若某能力在当前范围无法实现，可以描述影响、替代方式及其局限，交由项目评审决定。不能用没有实际效果的临时页面制造已经满足的印象。</p>
+<h2>处理变更时保住可比较性</h2>
+<p>现场修改规则是常见工作，但每次修改都可能改变结论。例如，在评估集上看过漏检后直接修规则，再用同一集报告效果，结果已包含适配行为。</p>
+<p>应记录修改时间、原因、影响用例和版本，区分修复前结果、调试结果和独立复测结果。重新调参后尽量使用未参与调整的样本；无法取得时，在报告中说明限制。</p>
+<p>对一项局部修复，也要检查相关功能。例如，改变对象映射可能影响归属展示、数据查询和交接摘要，不能只复测原失败页面。</p>
+<h2>问题台账需要能推动关闭</h2>
+<p>问题台账要让接手的人知道：影响是什么，谁在处理，还差哪次复测。只填“已处理”，别人仍无法判断问题是否真的解决。</p>
+<details class="tool-sheet"><summary>问题台账：从发现走到复测关闭</summary><table>
+<thead>
+<tr>
+<th>问题编号</th>
+<th>关联用例与现象</th>
+<th>影响与当前状态</th>
+<th>责任动作</th>
+<th>关闭证据</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>I01</td>
+<td>T02冲突输入仍返回单一归属</td>
+<td>可能误导交接；待修订</td>
+<td>实施方补冲突处理，使用方确认提示</td>
+<td>新批次中冲突与正常用例均通过</td>
+</tr>
+<tr>
+<td>I02</td>
+<td>T03缺时段却显示无异常</td>
+<td>可能把无数据误当正常；未关闭</td>
+<td>补覆盖提示并复核查询逻辑</td>
+<td>输入覆盖与页面状态对应</td>
+</tr>
+<tr>
+<td>I03</td>
+<td>T04测试角色未准备</td>
+<td>权限用例阻塞</td>
+<td>授权管理角色安排测试身份</td>
+<td>获准角色完成允许与拒绝两类测试</td>
+</tr>
+</tbody></table></details>
+<p>表中事项均为示例，未给出真实执行结果。对待关闭问题，应写预计动作与复测条件，不写成已经解决。</p>
+<h2>看负载时不要只看峰值</h2>
+<p>在负载测试中，某一时刻吞吐较高，不代表整段运行稳定。应同时检查输入是否持续、处理是否成功、输出是否到达、积压是否增长、错误与资源是否出现持续变化。</p>
+<p>若一轮测试加入了更多并发或不同尺寸数据，应单列条件。多组结果可以帮助解释能力边界，但不能直接比较后宣称某项能力提升了多少。</p>
+<p>发生异常后，先固定观测再处理。保留必要记录、确认停止或退回条件，按约定恢复。未经授权，不应为追求测试结果随意扩大资源、调整生产路径或关闭原有告警。</p>
+<h2>每天用结论与待办同步进展</h2>
+<p>一次简短同步应说明：今天回答了哪些问题，哪些结论有证据，哪些问题仍阻塞，发生了哪些变更，明天需要谁提供什么。这样使用者、维护方和实施方看到的是同一份事实状态。</p>
+<p>不通过不必然意味着项目失败。它可能表明方案需要调整，或某项能力不适合当前场景。把这种发现保存下来，比将所有事项包装为通过更有价值。</p>
+<p>每天收工前，把当天结果、改动和未决问题核对一遍。到了写报告时，应该能查清每项结论来自哪轮测试，而不是靠参与者回忆拼凑。</p>
+</div><a class="back" href="../金融智能运维项目实战_阅读合集.html#contents">回到系列目录</a></article></main></html>
